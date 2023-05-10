@@ -16,7 +16,8 @@ jobs:
       with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: " "
-    - name: Add git.evennode.com to known_hosts
+    - name: git@git.evennode.com:b5c093b70a77ef75927581a96e8e5e80.git
+
       run: |
         ssh-keyscan -H git.evennode.com > ~/.ssh/known_hosts
     - uses: actions/checkout@v2
